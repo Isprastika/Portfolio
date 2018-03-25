@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>latihan JS</title>
+		<script>
+			function mouseHover(){
+				var heading = document.getElementById('h1');
+				heading.innerHTML = "X";
+			}
+			function hoverBack(){
+				var heading = document.getElementById('h1');
+				heading.innerHTML = "This is Heading";
+			}
+
+			function focusIn(){
+				alert('Im in the field');
+			}
+			function blurOut(){
+				alert('Im out the field');
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id = "h1" onmouseover= "return mouseHover()" onmouseout="return hoverBack()">This is Heading</h1>
+		<button id="btn" onclick="return alert('Perhatian')">Continue</button>
+		<form>
+			Captcha: <input onfocus="return focusIn()" onblur="return blurOut()" type="text" name="name"><br/>
+			<input type="Submit" value="Submit"><br/>
+		</form>
+	</body>
+</html>

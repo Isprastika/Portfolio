@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>latihan JS</title>
+	</head>
+	<body>
+		<script>
+			var hari = new Date().getDay();
+			switch(hari){
+				case 0 :
+					day = 'Sekarang hari Minggu';
+					break;
+				case 1: 
+					day = 'Sekarang hari Senin';
+				break;
+				case 2 :
+					day = 'Sekarang hari Selasa';
+					break;
+				case 3 :
+					day = 'Sekarang hari Rabu';
+					break;
+				case 4 :
+					day = 'Sekarang hari Kamis';
+					break;
+				case 5 :
+					day = 'Sekarang hari Jumat';
+					break;
+				case 6 :
+					day = 'Sekarang hari Sabtu';
+					break;
+				default :
+					day = 'Hari tidak diketahui';
+					break;
+			}
+			alert(day);
+		</script>
+	</body>
+</html>
